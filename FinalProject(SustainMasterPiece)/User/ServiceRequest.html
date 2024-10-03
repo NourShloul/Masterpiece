@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>
+      Markethon - Digital Marketing Agency Responsive HTML5 Template
+    </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="css/typography.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+        <!-- loading -->
+        <div id="loading">
+            <div id="loading-center">
+              <img src="images/loader.gif" alt="loder" />
+            </div>
+          </div>
+          <!-- loading End -->
+          <!-- Header -->
+          <header id="main-header" class="header-one">
+            <!-- menu start -->
+            <nav id="menu-1" class="mega-menu" data-color="">
+              <!-- menu list items container -->
+              <div class="menu-list-items">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <!-- menu logo -->
+                      <ul class="menu-logo">
+                        <li>
+                          <a href="index.html"
+                            ><img
+                              style="
+                                width: 120.66px;
+                                height: 40px;
+                                margin: 6px 0px 0px;
+                              "
+                              src="images/SustainHomeLogo.png"
+                              alt="logo"
+                              class="img-fluid"
+                          /></a>
+                        </li>
+                      </ul>
+                      <ul class="menu-sidebar">
+                        <li>
+                          <a class="slide-button button" href="login.html">
+                            <div class="first">Login</div>
+                            <div class="second">Login</div>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- menu search bar -->
+                      <ul class="menu-search-bar pull-right">
+                        <li>
+                          <form method="post" action="#">
+                            <label>
+                              <input
+                                name="menu_search_bar"
+                                placeholder="Search"
+                                type="search"
+                              />
+                              <i class="fas fa-search"></i>
+                            </label>
+                          </form>
+                        </li>
+                      </ul>
+                      <!-- menu links -->
+                      <ul class="menu-links">
+                        <!-- active class -->
+                        <li><a href="index-4.html">Home</a></li>
+                        <li><a href="about-us.html" class="active">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+      
+                        <!-- Move Login and Cart buttons to the end -->
+                        <li class="pull-right">
+                          <a href="login.html">
+                            <i class="fas fa-user"></i>
+                            <!-- Login icon -->
+                          </a>
+                        </li>
+                        <!-- <li class="pull-right">
+                          <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> -->
+                        <!-- Cart icon -->
+                        <!-- </a>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- menu end -->
+          </header>
+          <!-- Header END -->
+           <div class="main-content">
+            <div class="overview-block-ptb">
+                <div class="container">
+                  <!-- User Profile Overview Section -->
+                  <div class="row">
+                    <div
+                      class="comments-box position-relative mt-5"
+                      style="width: 100%"
+                    >
+            <div class="container form-container">
+                <h2 class="text-center mb-4">Service Request</h2>
+                <form id="serviceForm">
+                  <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="contactInfo" class="form-label"
+                          >Contact Information</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="contactName"
+                          placeholder="Name"
+                        />
+                        <input
+                          type="email"
+                          class="form-control mt-2"
+                          id="contactEmail"
+                          placeholder="Email"
+                        />
+                        <input
+                          type="tel"
+                          class="form-control mt-2"
+                          id="contactPhone"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    <label for="serviceType" class="form-label">Service Type</label>
+                    <select
+                      class="slide-btn button"
+                      id="serviceType"
+                      aria-label="Select service type"
+                      onchange="fetchSubServices()"
+                    >
+                      <option selected disabled>Select a service</option>
+                      <!-- Dynamic service options will be populated here -->
+                    </select>
+                  </div>
+          
+                  <div id="subServices" class="mb-3" style="display: none">
+                    <label class="form-label">Sub-Services</label>
+                    <div id="subServiceOptions"></div>
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="projectDescription" class="form-label"
+                      >Project Description</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="projectDescription"
+                      rows="3"
+                      placeholder="Enter a general description about your project or company"
+                    ></textarea>
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="budget" class="form-label">Expected Budget</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="budget"
+                      placeholder="Enter the expected budget"
+                    />
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="duration" class="form-label">Project Duration</label>
+                    <select class="form-select slide-btn button" id="duration">
+                      <option selected disabled>Select project duration</option>
+                      <option value="1_week">One Week</option>
+                      <option value="1_month">One Month</option>
+                      <option value="more">More than a Month</option>
+                    </select>
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="files" class="form-label">Upload Files</label>
+                    <input type="file" class="form-control" id="files" multiple />
+                  </div>
+          
+                  <button type="submit" class="slide-button button w-100">
+                    Submit Request
+                  </button>
+                </form>
+              </div>
+           </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+           <!-- Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="appointmentModalLabel">حجز موعد</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="appointmentForm">
+            <div class="mb-3">
+              <label for="appointmentDate" class="form-label">التاريخ</label>
+              <input type="date" class="form-control" id="appointmentDate" required>
+            </div>
+            <div class="mb-3">
+              <label for="appointmentTime" class="form-label">الوقت</label>
+              <input type="time" class="form-control" id="appointmentTime" required>
+            </div>
+            <div class="mb-3">
+              <label for="appointmentNotes" class="form-label">ملاحظات إضافية</label>
+              <textarea class="form-control" id="appointmentNotes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">تأكيد الموعد</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <footer class="footer-one footer-bg position-relative">
+        <img
+          src="images/footer/4.png"
+          class="img-fluid fshap-after"
+          alt="image"
+        />
+        <div
+          class="iq-subscribe pattern-left container position-relative"
+          id="iq-subscribe"
+        >
+          <div class="pattern-right">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-12">
+                <div class="title-box text-left">
+                  <h2 class="title mb-3 text-white">Let's Discuss</h2>
+                  <p class="text-white iq-fw-4 mb-0">
+                    Ready to elevate your business? Get in touch with us to
+                    discuss how we can help you grow through our tailored digital
+                    marketing strategies.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <form class="position-relative subscribe-form mt-5 mt-lg-0">
+                  <div class="form-group mb-0">
+                    <input
+                      type="email"
+                      class="form-control position-relative subscription-email mb-0"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                  <a
+                    class="slide-button button bt-subscribe subscription-button"
+                    href="javascript:void(0)"
+                  >
+                    <div class="first">Subscribe</div>
+                    <div class="second">Subscribe</div>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contactinfo">
+          <div class="container p-0">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="iq-footer-logo">
+                  <a href="index-4.html"
+                    ><img
+                      src="images/footer/logo.png"
+                      class="img-fluid"
+                      alt="image"
+                  /></a>
+                </div>
+                <div class="footer-copyright mb-4 iq-fw-5 mt-3">
+                  ©Copyrights
+                  <span id="copyright">
+                    <script>
+                      document
+                        .getElementById("copyright")
+                        .appendChild(
+                          document.createTextNode(new Date().getFullYear())
+                        );
+                    </script> </span
+                  >Sustain
+                </div>
+                <div>
+                  <div class="lang float-left">
+                    <i class="fas fa-globe"></i>
+                    <select name="languagelist" class="iq-language iq-fw-4">
+                      <option value="volvo">English</option>
+                      <option value="audi">Arabic</option>
+                    </select>
+                  </div>
+  
+                  <div class="social-media d-inline-block float-left ml-4">
+                    <ul class="social">
+                      <li>
+                        <a href="https://web.facebook.com/nourr.shloul.9/"
+                          ><i class="fab fa-facebook-f iq-fw-6"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/nouralshloul/?hl=en"
+                          ><i class="fab fa-instagram iq-fw-6"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/nour-al-shloul-73997b220/"
+                          ><i class="fab fa-linkedin iq-fw-6"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="contact mt-4 d-inline-block">
+                  <a href="tel:0123456789">
+                    <i class="fa fa-phone"></i
+                    ><span class="iq-fw-5"> 0 770 387 833</span></a
+                  >
+                  <div class="email d-inline-block">
+                    <a href="Mail:mail@sustain.com"> mail@sustain.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 footer-link">
+                <h5 class="iq-fw-7 riq-mt-40">About Us</h5>
+                <ul class="list-inline rmb-40">
+                  <li class="list-item"><a href="index-4.html">Home</a></li>
+                  <li class="list-item"><a href="about-us.html">About us</a></li>
+                  <li class="list-item"><a href="faq.html">FAQ</a></li>
+                  <li class="list-item"><a href="service.html">Services</a></li>
+                  <li class="list-item"><a href="all-blog-grid.html">Blog</a></li>
+                  <li class="list-item">
+                    <a href="contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6 footer-link">
+                <h5 class="iq-fw-7">Information</h5>
+                <ul class="list-inline">
+                  <li class="list-item"><a href="pricing.html">Pricing</a></li>
+                  <li class="list-item"><a href="client.html">Our Clients</a></li>
+                  <li class="list-item">
+                    <a href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="list-item">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li class="list-item"><a href="team.html">The Team</a></li>
+                  <li class="list-item">
+                    <a href="service.html">Our Benefits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="testimonials">
+                  <div
+                    id="iqtestimonials"
+                    class="owl-carousel riq-mt-40"
+                    data-autoplay="true"
+                    data-loop="true"
+                    data-nav="false"
+                    data-dots="false"
+                    data-items="1"
+                    data-items-laptop="1"
+                    data-items-tab="1"
+                    data-items-mobile="1"
+                    data-items-mobile-sm="1"
+                    data-margin="15"
+                  >
+                    <div class="item">
+                      <div class="desc">
+                        <p class="mb-0">
+                          Progravida
+                          <span class="text-black iq-fw-7"
+                            >#nibh vel velit auctor</span
+                          >
+                          alinean sollicitudin, lorem quis bibendum auctor, nisi
+                          elit consequat ipsum,Lorem Ipsum.
+                          <a href="javascript:void(0)#" class="text-black iq-fw-7"
+                            >https://iqonicthemes.com</a
+                          >
+                        </p>
+                      </div>
+                      <div class="author">
+                        <div class="float-left d-flex mr-3">
+                          <i class="fab fa-twitter text-white"></i>
+                        </div>
+                        <div class="float-left">
+                          <div class="overview">
+                            <a>
+                              <h6 class="name text-black mb-0">iqonicthemes</h6>
+                            </a>
+                            <div class="details">2 Months Ago</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="desc">
+                        <p class="mb-0">
+                          Progravida
+                          <span class="text-black iq-fw-7"
+                            >#nibh vel velit auctor</span
+                          >
+                          alinean sollicitudin, lorem quis bibendum auctor, nisi
+                          elit consequat ipsum,Lorem Ipsum.
+                          <a href="javascript:void(0)" class="text-black iq-fw-7"
+                            >https://iqonicthemes.com</a
+                          >
+                        </p>
+                      </div>
+                      <div class="author">
+                        <div class="float-left d-flex mr-3">
+                          <i class="fab fa-twitter text-white"></i>
+                        </div>
+                        <div class="float-left">
+                          <div class="overview">
+                            <h6 class="name text-black mb-0">iqonicthemes</h6>
+                            <div class="details">2 Months Ago</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="desc">
+                        <p class="mb-0">
+                          Progravida
+                          <span class="text-black iq-fw-7"
+                            >#nibh vel velit auctor</span
+                          >
+                          alinean sollicitudin, lorem quis bibendum auctor, nisi
+                          elit consequat ipsum,Lorem Ipsum.
+                          <a href="javascript:void(0)" class="text-black iq-fw-7"
+                            >https://iqonicthemes.com</a
+                          >
+                        </p>
+                      </div>
+                      <div class="author">
+                        <div class="float-left d-flex mr-3">
+                          <i class="fab fa-twitter text-white"></i>
+                        </div>
+                        <div class="float-left">
+                          <div class="overview">
+                            <h6 class="name text-black mb-0">iqonicthemes</h6>
+                            <div class="details">2 Months Ago</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- back-to-top -->
+        <div id="back-to-top">
+          <a class="top" id="top" href="#top"
+            ><i class="ion-ios-arrow-thin-up"></i
+          ></a>
+        </div>
+        <!-- back-to-top End -->
+      </footer>
+      <script>
+        // Fetch services dynamically
+        document.addEventListener("DOMContentLoaded", () => {
+          fetch("http://localhost:5036/api/Service/Service/GetAllServices")
+            .then((response) => response.json())
+            .then((services) => {
+              const serviceTypeSelect = document.getElementById("serviceType");
+              services.forEach((service) => {
+                const option = document.createElement("option");
+                option.value = service.id;
+                option.textContent = service.name;
+                serviceTypeSelect.appendChild(option);
+              });
+            })
+            .catch((error) => console.error("Error fetching services:", error));
+        });
+      
+        // Fetch subservices when a service is selected
+        function fetchSubServices() {
+          const serviceId = document.getElementById("serviceType").value;
+          fetch(`http://localhost:5036/api/SubService/subServices/GetSubServicesByServiceId/${serviceId}`) // Call the API to fetch subservices for the selected service
+            .then((response) => response.json())
+            .then((subServices) => {
+              const subServiceDiv = document.getElementById("subServiceOptions");
+              subServiceDiv.innerHTML = ""; // Clear previous subservices
+              subServices.forEach((subService) => {
+                const checkbox = document.createElement("div");
+                checkbox.classList.add("form-check");
+                checkbox.innerHTML = `
+                  <input class="form-check-input" type="checkbox" id="subService${subService.id}" value="${subService.id}">
+                  <label class="form-check-label" for="subService${subService.id}">${subService.name}</label>
+                `;
+                subServiceDiv.appendChild(checkbox);
+              });
+              document.getElementById("subServices").style.display = "block"; // Show subservice options
+            })
+            .catch((error) => console.error("Error fetching subservices:", error));
+        }
+      
+        // Add event listener to service type select
+        document.getElementById("serviceType").addEventListener("change", fetchSubServices);
+      
+        // Handle form submission
+        document.getElementById("serviceForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+      
+          const formData = new FormData();
+          formData.append("serviceId", document.getElementById("serviceType").value);
+          formData.append("projectDescription", document.getElementById("projectDescription").value);
+          formData.append("budget", document.getElementById("budget").value);
+          formData.append("duration", document.getElementById("duration").value);
+          formData.append("contactName", document.getElementById("contactName").value);
+          formData.append("contactEmail", document.getElementById("contactEmail").value);
+          formData.append("contactPhone", document.getElementById("contactPhone").value);
+      
+          // Add selected subservices
+          const subServiceInputs = document.querySelectorAll("#subServiceOptions input:checked");
+          subServiceInputs.forEach((input) => {
+            formData.append("subServices", input.value);
+          });
+      
+          // Handle file uploads
+          const files = document.getElementById("files").files;
+          for (let i = 0; i < files.length; i++) {
+            formData.append("files", files[i]);
+          }
+      
+          // Send the data to the backend
+          fetch("http://localhost:5036/api/SubService/subServices/CreatesubService", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              alert("Request submitted successfully");
+              console.log(data);
+            })
+            .catch((error) => console.error("Error submitting form:", error));
+        });
+      </script>
+      
+    <!-- back-to-top -->
+    <div id="back-to-top">
+        <a class="top" id="top" href="#top"
+          ><i class="ion-ios-arrow-thin-up"></i
+        ></a>
+      </div>
+      <!-- back-to-top End -->
+    </footer>
+    <script src="../User/revslider/js/showService.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-min.js"></script>
+    <!-- popper  -->
+    <script src="js/popper.min.js"></script>
+    <!--  bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Modernizr JavaScript -->
+    <script src="js/modernizr.js"></script>
+    <!-- Appear JavaScript -->
+    <script src="js/appear.min.js"></script>
+    <!-- Megamenu  -->
+    <script src="js/mega_menu.min.js"></script>
+    <!-- Timeline JavaScript -->
+    <script src="js/timeline.js"></script>
+    <!-- Wow -->
+    <script src="js/wow.min.js"></script>
+    <!-- scrollme -->
+    <script src="js/jquery.scrollme.min.js"></script>
+    <!-- countdown JavaScript -->
+    <script src="js/countdown.js"></script>
+    <!-- waypoints JavaScript -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Counterup JavaScript -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Owl Carousel JavaScript -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JavaScript -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope JavaScript -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Progressbar JavaScript -->
+    <script src="js/circle-progress.min.js"></script>
+    <!-- Canvas JavaScript -->
+    <script src="js/canvasjs.min.js"></script>
+    <!-- Retina JavaScript -->
+    <script src="js/retina.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
