@@ -8,6 +8,8 @@
 
         public string? Name { get; set; } = null!;
 
-        public int PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
     }
 }
+
+

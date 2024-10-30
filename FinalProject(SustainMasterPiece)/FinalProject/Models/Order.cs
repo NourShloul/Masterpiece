@@ -21,7 +21,5 @@ public partial class Order
 
     public virtual ICollection<FormCheckboxChoice> FormCheckboxChoices { get; set; } = new List<FormCheckboxChoice>();
 
-    public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
-
     public virtual User? User { get; set; }
 }

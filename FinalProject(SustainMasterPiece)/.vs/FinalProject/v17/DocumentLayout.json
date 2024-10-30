@@ -1,82 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\",
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\subservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\subservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\masterfront\\masterpiece\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\masterfront\\masterpiece\\finalproject(sustainmasterpiece)\\finalproject\\dto\\servicerequestorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\servicerequestorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\subservicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\subservicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\servicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\masterfront\\masterpiece\\finalproject(sustainmasterpiece)\\finalproject\\dto\\servicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\servicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\contactrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\contactrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\masterfront\\masterpiece\\finalproject(sustainmasterpiece)\\finalproject\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\models\\contactu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\models\\contactu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\shared\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\shared\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\otpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\otpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\finalproject(sustainmasterpiece)\\finalproject\\dto\\otpgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\dto\\otpgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|c:\\users\\orange\\desktop\\masterfront\\masterpiece\\finalproject(sustainmasterpiece)\\finalproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858A8D70-3551-455A-9AB1-DA6D80CB6E5A}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,246 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAgwGEAAAAVAAAA",
+              "DocumentIndex": 1,
+              "Title": "ServiceRequestorderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ServiceRequestorderDTO.cs",
+              "RelativeDocumentMoniker": "FinalProject\\DTO\\ServiceRequestorderDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ServiceRequestorderDTO.cs",
+              "RelativeToolTip": "FinalProject\\DTO\\ServiceRequestorderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:23:17.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ServiceRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ServiceRequestDTO.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\ServiceRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ServiceRequestDTO.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\ServiceRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T18:49:48.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Models\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\MyDbContext.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Models\\MyDbContext.cs",
-              "RelativeToolTip": "FinalProject\\Models\\MyDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T20:20:42.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T11:09:00.164Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\UserController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\UserController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAD0AAABpAAAA",
+              "Title": "ServiceRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ServiceRequestDTO.cs",
+              "RelativeDocumentMoniker": "FinalProject\\DTO\\ServiceRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ServiceRequestDTO.cs",
+              "RelativeToolTip": "FinalProject\\DTO\\ServiceRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T21:31:39.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T08:46:09.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ServiceController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\ServiceController.cs",
               "RelativeDocumentMoniker": "FinalProject\\Controllers\\ServiceController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\ServiceController.cs",
               "RelativeToolTip": "FinalProject\\Controllers\\ServiceController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwEkAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T08:39:57.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T08:43:35.703Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SubServiceController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\SubServiceController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\SubServiceController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\SubServiceController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\SubServiceController.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAqwJ8AAAAAAAAA",
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\RequestController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\RequestController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAuwCIAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T18:41:45.937Z",
+              "WhenOpened": "2024-10-29T08:30:15.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Program.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Program.cs",
-              "RelativeToolTip": "FinalProject\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAACAAAA",
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "FinalProject\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:34:58.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\LoginDTO.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\LoginDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:44:54.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\appsettings.json",
-              "RelativeDocumentMoniker": "FinalProject\\appsettings.json",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\appsettings.json",
-              "RelativeToolTip": "FinalProject\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-02T21:11:21.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SubServiceRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\SubServiceRequestDTO.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\SubServiceRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\SubServiceRequestDTO.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\SubServiceRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T18:42:53.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmailRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\EmailRequest.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\EmailRequest.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\EmailRequest.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\EmailRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T21:33:26.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PaymentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\PaymentDTO.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\PaymentDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\PaymentDTO.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\PaymentDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T09:09:58.618Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\ContactController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T18:59:21.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\PaymentController.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAAAEgAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T20:21:51.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "OTPDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\OTPDTO.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\OTPDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\OTPDTO.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\OTPDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T21:38:27.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OTPGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\OTPGenerator.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\OTPGenerator.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\OTPGenerator.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\OTPGenerator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T21:35:22.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Shared\\EmailSender.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Shared\\EmailSender.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Shared\\EmailSender.cs",
-              "RelativeToolTip": "FinalProject\\Shared\\EmailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T21:20:54.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ContactRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ContactRequestDTO.cs",
-              "RelativeDocumentMoniker": "FinalProject\\DTO\\ContactRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\DTO\\ContactRequestDTO.cs",
-              "RelativeToolTip": "FinalProject\\DTO\\ContactRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T07:20:22.352Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ContactU.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Models\\ContactU.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\ContactU.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\Models\\ContactU.cs",
-              "RelativeToolTip": "FinalProject\\Models\\ContactU.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:05:21.112Z"
+              "WhenOpened": "2024-10-29T08:29:26.58Z"
             }
           ]
         }

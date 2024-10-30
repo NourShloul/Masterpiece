@@ -1,25 +1,24 @@
 document
-  .getElementById("loginForm")
+  .getElementById("loginLink")
   .addEventListener("click", async function (event) {
-    event.preventDefault(); // منع الإرسال الافتراضي للنموذج
+    event.preventDefault(); // Prevent the default button action
 
-    const formData = new FormData(this); // استخدام FormData لجمع بيانات النموذج
+    const loginForm = document.getElementById("loginForm");
+    const formData = new FormData(loginForm); // Collect form data
 
     try {
       const response = await fetch("http://localhost:5036/api/User/Login", {
-        // تغيير إلى عنوان API الخاص بك
         method: "POST",
-        body: formData,
+        body: formData, // Send FormData directly
       });
 
       if (response.ok) {
         const data = await response.json();
-        localStorage.setItem("userId"); // حفظ معرف المستخدم في التخزين المحلي
-        alert("Login Successfully");
-        window.location.href = "index-4.html"; // إعادة التوجيه إلى صفحة الملف الشخصي
+        localStorage.setItem("userId", data.userId); // Store user ID in local storage
+        window.location.href = "index-4.html"; // Redirect to home page or profile
       } else {
         const errorData = await response.json();
-        alert(errorData.message); // عرض رسالة الخطأ
+        alert(errorData.message); // Show error message
       }
     } catch (error) {
       console.error("Error:", error);

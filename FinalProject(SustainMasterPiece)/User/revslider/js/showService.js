@@ -33,49 +33,6 @@ function storeServiceId(serviceId) {
   localStorage.setItem("serviceId", serviceId);
   window.location.href = "service.html";
 }
-
-// async function toggleSubServices(serviceId, button) {
-//   const subServicesContainer = document.getElementById(
-//     `subServices-${serviceId}`
-//   );
-
-//   if (subServicesContainer.style.display === "none") {
-//     // Fetch subservices if they haven't been loaded yet
-//     if (!subServicesContainer.getAttribute("data-loaded")) {
-//       try {
-//         const response = await fetch(
-//           `http://localhost:5036/api/SubService/subServices/GetSubServicesByServiceId/${serviceId}`
-//         );
-//         if (response.ok) {
-//           const subServices = await response.json();
-
-//           const subServicesList = subServicesContainer.querySelector("ul");
-//           subServicesList.innerHTML = ""; // Clear previous list
-
-//           subServices.forEach((subService) => {
-//             const listItem = document.createElement("li");
-//             listItem.textContent = subService.name; // Assuming subservice has a name property
-//             subServicesList.appendChild(listItem);
-//           });
-
-//           subServicesContainer.setAttribute("data-loaded", "true"); // Mark as loaded
-//         } else {
-//           console.log("No subservices found for the selected service.");
-//         }
-//       } catch (error) {
-//         console.error("Error fetching subservices:", error);
-//       }
-//     }
-
-//     // Show the subservices
-//     subServicesContainer.style.display = "block";
-//     button.textContent = "Hide Subservices";
-//   } else {
-//     // Hide the subservices
-//     subServicesContainer.style.display = "none";
-//     button.textContent = "Show Subservices";
-//   }
-// }
 async function toggleSubServices(serviceId, button) {
   const subServicesContainer = document.getElementById(
     `subServices-${serviceId}`

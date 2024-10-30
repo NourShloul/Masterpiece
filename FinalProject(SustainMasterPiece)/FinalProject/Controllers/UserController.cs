@@ -62,43 +62,12 @@ namespace FinalProject.Controllers
             var data = _db.Users.FirstOrDefault(x => x.Email == user.Email && x.Password == user.Password );
             if (data == null)
             {
-                return BadRequest("You should register first.");
+                return Unauthorized("You should register first.");
             }
 
             // If the email exists, return a success message with the user ID
             return Ok(new { message = "Login successfully", userId = data.Id }); // Ensure 'Id' corresponds to the user's unique identifier
         }
 
-
-
-        [HttpPost("send")]
-        public async Task<IActionResult> SendEmail([FromForm] EmailRequest request)
-        {
-            // Generate OTP
-            var otp = OTPGenerator.GenerateOtp();
-            var user = _db.Users.FirstOrDefault(x => x.Email == request.ToEmail);
-            if (user == null) return NotFound();
-            user.Password = otp;
-            await _db.SaveChangesAsync();
-
-            // Create email body including the OTP
-            var emailBody = $"Hello Dear, Your SmartTech OTP code for resetting your password is: {otp} Thank you.";
-            const string subject = "send OTP";
-            // Send email with OTP
-            //await _emailService.SendEmailAsync(request.ToEmail, Subject, emailBody);
-            Shared.EmailSender.SendEmail(request.ToEmail, subject, emailBody);
-
-            return Ok(new { message = "Email sent successfully.", otp, user.Id }); // Optionally return the OTP for testing
-        }
-        [HttpPost("GetOTP/{id}")]
-        public IActionResult GetOtp([FromForm] OTPDTO request, int id)
-        {
-            var user = _db.Users.Find(id);
-            if (user?.Password == request.OTP)
-            {
-                return Ok();
-            }
-            return BadRequest();
-        }
     }
 }

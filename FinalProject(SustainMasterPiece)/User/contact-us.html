@@ -148,7 +148,7 @@
     <!-- Main Content -->
     <div class="main-content">
       <section class="iq-contact-us pb-0">
-        <div class="container" id="contact-form">
+        <form class="container" id="contact-form" onsubmit="sendMessage(event)">
           <div class="row">
             <div class="col-sm-12">
               <div class="section-title mb-4">
@@ -202,14 +202,13 @@
               <button
                 type="submit"
                 class="slide-button button contact-us-button"
-                onclick="sendMessage()"
               >
                 <div class="first">Submit</div>
                 <div class="second">Submit</div>
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </section>
       <!-- Additional Section -->
       <section>
@@ -543,9 +542,11 @@
     </footer>
     <script>
       const url = "http://localhost:5036/api/Contact/AddMessage";
-      async function sendMessage() {
+      async function sendMessage(event) {
+        // Prevent the form from submitting the traditional way
+        event.preventDefault();
+
         // Get form values
-        debugger;
         const firstName = document.querySelector(".contact-first-name").value;
         const phone = document.querySelector(".contact-phone").value;
         const email = document.querySelector(".contact-email").value;
@@ -553,10 +554,10 @@
 
         // Construct the JSON payload
         const payload = {
-          Name: firstName,
-          PhoneNumber: phone,
-          Email: email,
-          Message: message,
+          message: message,
+          email: email,
+          name: firstName,
+          phoneNumber: phone,
         };
 
         try {
@@ -581,6 +582,7 @@
         }
       }
     </script>
+
     <script src="js/jquery-min.js"></script>
     <!-- popper  -->
     <script src="js/popper.min.js"></script>

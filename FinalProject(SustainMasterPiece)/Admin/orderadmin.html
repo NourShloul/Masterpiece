@@ -164,94 +164,33 @@
         <!-- Divider -->
         <hr class="sidebar-divider my-0" />
 
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-          <a class="nav-link" href="admin.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a
-          >
-        </li>
-
         <!-- Divider -->
         <hr class="sidebar-divider" />
 
         <!-- Heading -->
         <div class="sidebar-heading">Interface</div>
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            href="#"
-            data-toggle="collapse"
-            data-target="#collapsePages"
-            aria-expanded="true"
-            aria-controls="collapsePages"
-          >
-            <i class="fas fa-fw fa-folder"></i>
-            <span>User Management</span>
-          </a>
-          <div
-            id="collapsePages"
-            class="collapse"
-            aria-labelledby="headingPages"
-            data-parent="#accordionSidebar"
-          >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <a class="collapse-item" href="Employee.html">Employee</a>
-              <a class="collapse-item" href="CustomerManagement.html"
-                >Customer Management</a
-              >
-              <a class="collapse-item" href="EmployeePerformanceReports.html"
-                >Employee Reports</a
-              >
-            </div>
-          </div>
-        </li>
-
-        <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
           <a class="nav-link" href="Useradmin.html">
             <i class="fas fa-fw fa-table"></i>
             <span>User</span></a
           >
         </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link" href="Admininadmin.html">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Admin</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="SchedulingSystem.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Scheduling System</span></a
-          >
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider" />
-
         <!-- Heading -->
         <div class="sidebar-heading">Addons</div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link" href="contactadmin.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>contact</span></a
-          >
-        </li>
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
           <a class="nav-link" href="servicesadmin.html">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Serveses</span></a
+            <span>Services</span></a
           >
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link" href="Subservice.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Subservice</span></a
+          >
+        </li>
         <!-- Nav Item - Tables -->
         <li class="nav-item">
           <a class="nav-link" href="orderadmin.html">
@@ -260,48 +199,17 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projectmengment.html">
+          <a class="nav-link" href="contactadmin.html">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>project Management</span></a
+            <span>contact</span></a
           >
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="dailytask.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>daily task</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="payment.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>payment</span></a
-          >
-        </li>
-
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
 
         <!-- Sidebar Toggler (Sidebar) -->
         <div class="text-center d-none d-md-inline">
           <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-
-        <!-- Sidebar Message -->
-        <div class="sidebar-card d-none d-lg-flex">
-          <img
-            class="sidebar-card-illustration mb-2"
-            src="img/undraw_rocket.svg"
-            alt="..."
-          />
-          <p class="text-center mb-2">
-            <strong>SB Admin Pro</strong> is packed with premium features,
-            components, and more!
-          </p>
-          <a
-            class="btn btn-success btn-sm"
-            href="https://startbootstrap.com/theme/sb-admin-pro"
-            >Upgrade to Pro!</a
-          >
         </div>
       </ul>
       <!-- End of Sidebar -->
@@ -604,73 +512,21 @@
 
           <!-- Begin Page Content -->
           <div class="container-fluid">
-            <h1 class="order-title text-center">Orders</h1>
-            <div class="row">
-              <!-- Order Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="order-card">
-                  <h5>Order #1</h5>
-                  <div class="order-info">
-                    <p>
-                      <i class="fas fa-user"></i><strong>Name:</strong> John Doe
-                    </p>
-                    <p>
-                      <i class="fas fa-building"></i
-                      ><strong>Company:</strong> ABC Corp
-                    </p>
-                    <p>
-                      <i class="fas fa-phone"></i
-                      ><strong>Phone:</strong> 123456789
-                    </p>
-                    <p>
-                      <i class="fas fa-envelope"></i
-                      ><strong>Email:</strong> john@example.com
-                    </p>
-                    <p>
-                      <i class="fas fa-laptop-code"></i
-                      ><strong>Project:</strong> Web Development
-                    </p>
-                  </div>
-                  <div class="text-end">
-                    <i class="fas fa-folder-open icon"></i>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Another Order Card -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="order-card">
-                  <h5>Order #2</h5>
-                  <div class="order-info">
-                    <p>
-                      <i class="fas fa-user"></i><strong>Name:</strong> Jane
-                      Smith
-                    </p>
-                    <p>
-                      <i class="fas fa-building"></i
-                      ><strong>Company:</strong> XYZ Solutions
-                    </p>
-                    <p>
-                      <i class="fas fa-phone"></i
-                      ><strong>Phone:</strong> 987654321
-                    </p>
-                    <p>
-                      <i class="fas fa-envelope"></i
-                      ><strong>Email:</strong> jane@example.com
-                    </p>
-                    <p>
-                      <i class="fas fa-mobile-alt"></i
-                      ><strong>Project:</strong> Mobile App Design
-                    </p>
-                  </div>
-                  <div class="text-end">
-                    <i class="fas fa-folder-open icon"></i>
-                  </div>
-                </div>
-              </div>
-
-              <!-- More cards can be added similarly -->
-            </div>
+            <h1 class="order-title text-center">Requsts</h1>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>sub id</th>
+                  <th>Subservice Name</th>
+                  <td>Service ID</td>
+                  <th>Service Name</th>
+                  <th>Description</th>
+                  <th>CreatedAt</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="ShowAllSubServiceTable"></tbody>
+            </table>
           </div>
           <!-- /.container-fluid -->
         </div>

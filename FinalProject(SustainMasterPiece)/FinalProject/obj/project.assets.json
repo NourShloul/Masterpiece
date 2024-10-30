@@ -4249,11 +4249,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\FinalProject.csproj",
+      "projectUniqueName": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\FinalProject.csproj",
       "projectName": "FinalProject",
-      "projectPath": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\FinalProject.csproj",
+      "projectPath": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\FinalProject.csproj",
       "packagesPath": "C:\\Users\\Orange\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orange\\Desktop\\FinalProject(SustainMasterPiece)\\FinalProject\\obj\\",
+      "outputPath": "C:\\Users\\Orange\\Desktop\\MasterFront\\Masterpiece\\FinalProject(SustainMasterPiece)\\FinalProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

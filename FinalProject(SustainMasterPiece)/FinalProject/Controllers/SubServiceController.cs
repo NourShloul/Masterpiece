@@ -155,5 +155,33 @@ namespace FinalProject.Controllers
             return Ok(subservice);  // Return updated subservice
         }
 
+        [HttpGet("subService/GetFilteredSubServices")]
+        public IActionResult GetFilteredSubServices([FromQuery] string serviceName = null)
+        {
+            var query = _db.SubServices
+                .Join(_db.Services, subService => subService.ServiceId, service => service.Id,
+                    (subService, service) => new
+                    {
+                        subService.Id,
+                        subService.Name,
+                        ServiceName = service.Name,
+                        ServiceId = service.Id,
+                        subService.Description,
+                        subService.CreatedAt
+                    });
+
+            if (!string.IsNullOrEmpty(serviceName))
+            {
+                query = query.Where(s => s.ServiceName == serviceName);
+            }
+
+            var result = query.ToList();
+            return Ok(result);
+        }
+
+
+
+
+
     }
 }

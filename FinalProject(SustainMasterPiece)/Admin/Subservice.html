@@ -158,100 +158,39 @@
           <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
           </div>
-          <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+          <div class="sidebar-brand-text mx-3">Sustain Dashboard</div>
         </a>
 
         <!-- Divider -->
         <hr class="sidebar-divider my-0" />
-
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-          <a class="nav-link" href="admin.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a
-          >
-        </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider" />
 
         <!-- Heading -->
         <div class="sidebar-heading">Interface</div>
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            href="#"
-            data-toggle="collapse"
-            data-target="#collapsePages"
-            aria-expanded="true"
-            aria-controls="collapsePages"
-          >
-            <i class="fas fa-fw fa-folder"></i>
-            <span>User Management</span>
-          </a>
-          <div
-            id="collapsePages"
-            class="collapse"
-            aria-labelledby="headingPages"
-            data-parent="#accordionSidebar"
-          >
-            <div class="bg-white py-2 collapse-inner rounded">
-              <a class="collapse-item" href="Employee.html">Employee</a>
-              <a class="collapse-item" href="CustomerManagement.html"
-                >Customer Management</a
-              >
-              <a class="collapse-item" href="EmployeePerformanceReports.html"
-                >Employee Reports</a
-              >
-            </div>
-          </div>
-        </li>
-
-        <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
           <a class="nav-link" href="Useradmin.html">
             <i class="fas fa-fw fa-table"></i>
             <span>User</span></a
           >
         </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link" href="Admininadmin.html">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Admin</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="SchedulingSystem.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Scheduling System</span></a
-          >
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider" />
-
         <!-- Heading -->
         <div class="sidebar-heading">Addons</div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link" href="contactadmin.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>contact</span></a
-          >
-        </li>
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
           <a class="nav-link" href="servicesadmin.html">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Serveses</span></a
+            <span>Services</span></a
           >
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link" href="Subservice.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Subservice</span></a
+          >
+        </li>
         <!-- Nav Item - Tables -->
         <li class="nav-item">
           <a class="nav-link" href="orderadmin.html">
@@ -260,48 +199,17 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projectmengment.html">
+          <a class="nav-link" href="contactadmin.html">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>project Management</span></a
+            <span>contact</span></a
           >
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="dailytask.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>daily task</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="payment.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>payment</span></a
-          >
-        </li>
-
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
 
         <!-- Sidebar Toggler (Sidebar) -->
         <div class="text-center d-none d-md-inline">
           <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-
-        <!-- Sidebar Message -->
-        <div class="sidebar-card d-none d-lg-flex">
-          <img
-            class="sidebar-card-illustration mb-2"
-            src="img/undraw_rocket.svg"
-            alt="..."
-          />
-          <p class="text-center mb-2">
-            <strong>SB Admin Pro</strong> is packed with premium features,
-            components, and more!
-          </p>
-          <a
-            class="btn btn-success btn-sm"
-            href="https://startbootstrap.com/theme/sb-admin-pro"
-            >Upgrade to Pro!</a
-          >
         </div>
       </ul>
       <!-- End of Sidebar -->
@@ -604,7 +512,7 @@
 
           <!-- Begin Page Content -->
           <div class="container mt-4">
-            <h1 class="mb-4">Project Management</h1>
+            <h1 class="mb-4">Subservice Management</h1>
 
             <!-- Button to trigger Add Project Modal -->
             <button
@@ -612,7 +520,7 @@
               data-bs-toggle="modal"
               data-bs-target="#addProjectModal"
             >
-              Add New Project
+              Add New Subservice
             </button>
 
             <!-- Project Table -->
@@ -628,19 +536,7 @@
                   <th>Actions</th>
                 </tr>
               </thead>
-              <tbody id="ShowAllSubServiceTable">
-                <!-- <tr>
-                  <td>Website Development</td>
-                  <td>XYZ Corp</td>
-                  <td>XYZ Corp</td>
-                  <td>2024-10-01</td>
-                  <td><progress value="70" max="100">70%</progress></td>
-                  <td>
-                    <button class="btn btn-warning btn-sm">Edit</button>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                  </td>
-                </tr> -->
-              </tbody>
+              <tbody id="ShowAllSubServiceTable"></tbody>
             </table>
 
             <!-- Add Project Modal -->
@@ -668,51 +564,38 @@
                     <!-- Add Project Form -->
                     <form id="addProjectForm">
                       <div class="mb-3">
-                        <label for="projectName" class="form-label"
+                        <label for="SubserviceName" class="form-label"
                           >Subservice Name</label
                         >
                         <input
                           type="text"
                           class="form-control"
-                          id="projectName"
+                          id="SubserviceName"
                           required
                         />
                       </div>
                       <div class="mb-3">
-                        <label for="clientName" class="form-label"
+                        <label for="ServiceId" class="form-label"
                           >Service id</label
                         >
                         <input
                           type="text"
                           class="form-control"
-                          id="clientName"
+                          id="ServiceId"
                           required
                         />
                       </div>
                       <div class="mb-3">
-                        <label for="deadline" class="form-label"
+                        <label for="description" class="form-label"
                           >Description</label
                         >
                         <input
                           type="text"
                           class="form-control"
-                          id="deadline"
+                          id="description"
                           required
                         />
                       </div>
-                      <!-- <div class="mb-3">
-                        <label for="progress" class="form-label"
-                          >Progress</label
-                        >
-                        <input
-                          type="number"
-                          class="form-control"
-                          id="progress"
-                          min="0"
-                          max="100"
-                          required
-                        />
-                      </div> -->
                       <div class="modal-footer">
                         <button
                           type="button"
@@ -721,7 +604,11 @@
                         >
                           Close
                         </button>
-                        <button type="submit" class="btn btn-primary">
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                          onclick="AddSubServive()"
+                        >
                           Save Project
                         </button>
                       </div>
@@ -869,158 +756,14 @@
             >
               Cancel
             </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <a class="btn btn-primary" href="AdminLogin.html">Logout</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- JavaScript Libraries -->
-    <!-- <script>
-      function setSubServiceId(ServiceId) {
-        localStorage.setItem("SubServiceId", ServiceId);
-        window.location.reload(); // Reload the page to apply the new subServiceId
-      }
-
-      debugger;
-      const subServiceId = localStorage.getItem("SubServiceId"); // Get subServiceId from localStorage
-      var url;
-
-      // If a specific SubServiceId is set, fetch products by SubServiceId, otherwise fetch all SubServices
-      url = "http://localhost:5036/api/SubService/subService/GetAllsubServices";
-
-      // Fetch and display sub-services
-      async function GetSubServices() {
-        var response = await fetch(url);
-        var result = await response.json();
-
-        var container = document.getElementById("ShowAllSubServiceTable");
-
-        result.forEach((subService) => {
-          container.innerHTML += `
-          <tr>
-              <td>${subService.id}</td>
-              <td>${subService.name}</td>
-              <td>${subService.serviceName}</td>
-              <td>${subService.description}</td>
-              <td>${subService.createdAt}</td>
-              <td>
-                  <button class="btn btn-warning btn-sm" onclick="UpdateSubService(${subService.Id})">Edit</button>
-                  <button class="btn btn-danger btn-sm" onclick="DeleteSubService(${subService.Id})">Delete</button>
-              </td>
-          </tr>
-        `;
-        });
-      }
-
-      // Navigate to update sub-service page
-      function UpdateSubService(id) {
-        localStorage.setItem("subServiceId", id); // Store the subServiceId for editing
-        window.location.href = "UpdateSubService.html"; // Redirect to the update page
-      }
-
-      // Delete sub-service by id
-      async function DeleteSubService(subServiceId) {
-        var url = `https://localhost:44338/Api/SubServices/DeleteSubService/${subServiceId}`;
-
-        let request = await fetch(url, {
-          method: "DELETE",
-        });
-
-        if (request.ok) {
-          alert("The sub-service has been deleted successfully");
-          window.location.reload(); // Reload page after deletion
-        } else {
-          alert("Failed to delete the sub-service");
-        }
-      }
-
-      // Call the function to fetch and display sub-services
-      GetSubServices();
-    </script> -->
-    <script>
-      async function GetSubServices() {
-        var url =
-          "http://localhost:5036/api/SubService/subService/GetAllsubServices";
-        var response = await fetch(url);
-        var result = await response.json();
-
-        var container = document.getElementById("ShowAllSubServiceTable");
-        container.innerHTML = ""; // Clear previous data
-
-        result.forEach((subService) => {
-          container.innerHTML += `
-            <tr>
-                <td>${subService.id}</td>
-                <td>${subService.name}</td>
-                <td>${subService.serviceId}</td>
-                <td>${subService.serviceName}</td> <!-- Display Service Name -->
-                <td>${subService.description}</td>
-                <td>${subService.createdAt}</td>
-                <td>
-                    <button class="btn btn-warning btn-sm" onclick="openEditModal(${subService.id}, '${subService.name}', '${subService.serviceName}', '${subService.description}')">Edit</button>
-                    <button class="btn btn-danger btn-sm" onclick="deleteSubService(${subService.id})">Delete</button>
-                </td>
-            </tr>
-            `;
-        });
-      }
-      function openEditModal(id, name, serviceName, description) {
-        // Populate the modal fields with sub-service data
-        document.getElementById("editSubServiceId").value = id;
-        document.getElementById("editSubServiceName").value = name;
-        document.getElementById("editSubServiceServiceName").value =
-          serviceName;
-        document.getElementById("editSubServiceDescription").value =
-          description;
-
-        // Show the modal
-        var editModal = new bootstrap.Modal(
-          document.getElementById("editSubServiceModal")
-        );
-        editModal.show();
-      }
-
-      // Save changes and update sub-service
-      async function saveSubService() {
-        var id = document.getElementById("editSubServiceId").value;
-        var name = document.getElementById("editSubServiceName").value;
-        var serviceName = document.getElementById(
-          "editSubServiceServiceName"
-        ).value; // Service Name
-        var description = document.getElementById(
-          "editSubServiceDescription"
-        ).value;
-
-        // Assuming the API can map ServiceName to ServiceId
-        var data = {
-          Name: name,
-          ServiceName: serviceName, // Send ServiceName instead of ServiceId
-          Description: description,
-        };
-
-        var url = `http://localhost:5036/api/Service/Services/UpdateService/${id}`;
-
-        // Send PUT request to update sub-service
-        let request = await fetch(url, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        });
-
-        if (request.ok) {
-          alert("Sub-service updated successfully.");
-          window.location.reload(); // Reload the page to refresh the list
-        } else {
-          alert("Failed to update sub-service.");
-        }
-      }
-
-      // Call the function to load and display the sub-services
-      GetSubServices();
-    </script>
+    <script src="js/SubserviceMangement.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>

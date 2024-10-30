@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("G4oAZQyMoSijGR85F"); // استبدل USER_ID بـ ID الخاص بك من EmailJS
+      })();
+    </script>
   </head>
   <body>
         <!-- loading -->
@@ -106,134 +112,81 @@
             <!-- menu end -->
           </header>
           <!-- Header END -->
-           <div class="main-content">
+          <div class="main-content">
             <div class="overview-block-ptb">
-                <div class="container">
-                  <!-- User Profile Overview Section -->
-                  <div class="row">
-                    <div
-                      class="comments-box position-relative mt-5"
-                      style="width: 100%"
-                    >
-            <div class="container form-container">
-                <h2 class="text-center mb-4">Service Request</h2>
-                <form id="serviceForm">
-                  <div class="mb-3">
-                    <div class="mb-3">
-                        <label for="contactInfo" class="form-label"
-                          >Contact Information</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="contactName"
-                          placeholder="Name"
-                        />
-                        <input
-                          type="email"
-                          class="form-control mt-2"
-                          id="contactEmail"
-                          placeholder="Email"
-                        />
-                        <input
-                          type="tel"
-                          class="form-control mt-2"
-                          id="contactPhone"
-                          placeholder="Phone Number"
-                        />
-                      </div>
-                    <label for="serviceType" class="form-label">Service Type</label>
-                    <select
-                      class="slide-btn button"
-                      id="serviceType"
-                      aria-label="Select service type"
-                      onchange="fetchSubServices()"
-                    >
-                      <option selected disabled>Select a service</option>
-                      <!-- Dynamic service options will be populated here -->
-                    </select>
-                  </div>
+              <div class="container">
+                <!-- User Profile Overview Section -->
+                <div class="row">
+                  <div class="comments-box position-relative mt-5" style="width: 100%">
+                    <div class="container form-container">
+                      <h2 class="text-center mb-4">Service Request</h2>
+                      <form id="serviceForm">
+                        <!-- Contact Information -->
+                        <div class="mb-3">
+                          <label for="contactInfo" class="form-label">Contact Information</label>
+                          <input type="text" class="form-control" id="contactName" placeholder="Name" required />
+                          <input type="email" class="form-control mt-2" id="contactEmail" placeholder="Email" required />
+                          <input type="tel" class="form-control mt-2" id="contactPhone" placeholder="Phone Number" required />
+                        </div>
           
-                  <div id="subServices" class="mb-3" style="display: none">
-                    <label class="form-label">Sub-Services</label>
-                    <div id="subServiceOptions"></div>
-                  </div>
+                        <!-- Service Type Selection -->
+                        <div class="mb-3">
+                          <label for="serviceType" class="form-label">Service Type</label>
+                          <select class="slide-btn button" id="serviceType" required>
+                            <option selected disabled>Select a service</option>
+                            <!-- Dynamic service options will be populated here -->
+                          </select>
+                        </div>
           
-                  <div class="mb-3">
-                    <label for="projectDescription" class="form-label"
-                      >Project Description</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="projectDescription"
-                      rows="3"
-                      placeholder="Enter a general description about your project or company"
-                    ></textarea>
-                  </div>
+                        <!-- Sub-Services -->
+                        <div id="subServices" class="mb-3" style="display: none">
+                          <label class="form-label">Sub-Services</label>
+                          <div  id="subServiceOptions"></div>
+                        </div>
           
-                  <div class="mb-3">
-                    <label for="budget" class="form-label">Expected Budget</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="budget"
-                      placeholder="Enter the expected budget"
-                    />
-                  </div>
+                        <!-- Project Description -->
+                        <div class="mb-3">
+                          <label for="projectDescription" class="form-label">Project Description</label>
+                          <textarea class="form-control" id="projectDescription" rows="3" placeholder="Enter a description" required></textarea>
+                        </div>
           
-                  <div class="mb-3">
-                    <label for="duration" class="form-label">Project Duration</label>
-                    <select class="form-select slide-btn button" id="duration">
-                      <option selected disabled>Select project duration</option>
-                      <option value="1_week">One Week</option>
-                      <option value="1_month">One Month</option>
-                      <option value="more">More than a Month</option>
-                    </select>
-                  </div>
+                        <!-- Project Duration -->
+                        <div class="mb-3">
+                          <label for="duration" class="form-label">Project Duration</label>
+                          <select class="form-select slide-btn button" id="duration" required>
+                            <option selected disabled>Select project duration</option>
+                            <option value="1_month">One Month</option>
+                            <option value="3_month">Three Months</option>
+                            <option value="more3">More than Three Months</option>
+                          </select>
+                        </div>
           
-                  <div class="mb-3">
-                    <label for="files" class="form-label">Upload Files</label>
-                    <input type="file" class="form-control" id="files" multiple />
-                  </div>
+                        <!-- Expected Budget -->
+                        <div class="mb-3">
+                          <label for="budget" class="form-label">Expected Budget in JOD</label>
+                          <input type="text" class="form-control" id="budget" placeholder="Enter the expected budget" required />
+                        </div>
           
-                  <button type="submit" class="slide-button button w-100">
-                    Submit Request
-                  </button>
-                </form>
-              </div>
-           </div>
+                        <!-- Meeting Preference -->
+                        <div class="mb-3">
+                          <label for="meetingPreference" class="form-label">Meeting Preference</label>
+                          <select class="form-select slide-btn button" id="meetingPreference" required>
+                            <option selected disabled>Select meeting preference</option>
+                            <option value="video_call">Video Call</option>
+                            <option value="office_meeting">In-Office Meeting</option>
+                          </select>
+                        </div>
+          
+                        <!-- Submit Button -->
+                        <button type="submit" class="slide-button button w-100">Submit Request</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
-           </div>
-           <!-- Modal -->
-<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="appointmentModalLabel">حجز موعد</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="appointmentForm">
-            <div class="mb-3">
-              <label for="appointmentDate" class="form-label">التاريخ</label>
-              <input type="date" class="form-control" id="appointmentDate" required>
-            </div>
-            <div class="mb-3">
-              <label for="appointmentTime" class="form-label">الوقت</label>
-              <input type="time" class="form-control" id="appointmentTime" required>
-            </div>
-            <div class="mb-3">
-              <label for="appointmentNotes" class="form-label">ملاحظات إضافية</label>
-              <textarea class="form-control" id="appointmentNotes" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">تأكيد الموعد</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+          </div>
+          
   
     <footer class="footer-one footer-bg position-relative">
         <img
@@ -483,86 +436,102 @@
         </div>
         <!-- back-to-top End -->
       </footer>
-      <script>
-        // Fetch services dynamically
-        document.addEventListener("DOMContentLoaded", () => {
-          fetch("http://localhost:5036/api/Service/Service/GetAllServices")
+   <script>
+    // Fetch services dynamically
+    document.addEventListener("DOMContentLoaded", () => {
+        fetch("http://localhost:5036/api/Service/Service/GetAllServices")
             .then((response) => response.json())
             .then((services) => {
-              const serviceTypeSelect = document.getElementById("serviceType");
-              services.forEach((service) => {
-                const option = document.createElement("option");
-                option.value = service.id;
-                option.textContent = service.name;
-                serviceTypeSelect.appendChild(option);
-              });
+                const serviceTypeSelect = document.getElementById("serviceType");
+                services.forEach((service) => {
+                    const option = document.createElement("option");
+                    option.value = service.id;
+                    option.textContent = service.name;
+                    serviceTypeSelect.appendChild(option);
+                });
             })
             .catch((error) => console.error("Error fetching services:", error));
-        });
-      
-        // Fetch subservices when a service is selected
-        function fetchSubServices() {
-          const serviceId = document.getElementById("serviceType").value;
-          fetch(`http://localhost:5036/api/SubService/subServices/GetSubServicesByServiceId/${serviceId}`) // Call the API to fetch subservices for the selected service
+    });
+
+    // Fetch subservices when a service is selected
+    function fetchSubServices() {
+        const serviceId = document.getElementById("serviceType").value;
+        fetch(`http://localhost:5036/api/SubService/subServices/GetSubServicesByServiceId/${serviceId}`)
             .then((response) => response.json())
             .then((subServices) => {
-              const subServiceDiv = document.getElementById("subServiceOptions");
-              subServiceDiv.innerHTML = ""; // Clear previous subservices
-              subServices.forEach((subService) => {
-                const checkbox = document.createElement("div");
-                checkbox.classList.add("form-check");
-                checkbox.innerHTML = `
-                  <input class="form-check-input" type="checkbox" id="subService${subService.id}" value="${subService.id}">
-                  <label class="form-check-label" for="subService${subService.id}">${subService.name}</label>
-                `;
-                subServiceDiv.appendChild(checkbox);
-              });
-              document.getElementById("subServices").style.display = "block"; // Show subservice options
+                const subServiceDiv = document.getElementById("subServiceOptions");
+                subServiceDiv.innerHTML = ""; // Clear previous subservices
+                subServices.forEach((subService) => {
+                    const checkbox = document.createElement("div");
+                    checkbox.classList.add("form-check");
+                    checkbox.innerHTML = `
+                      <input class="form-check-input" type="checkbox" id="subService${subService.id}" value="${subService.id}">
+                      <label class="form-check-label" for="subService${subService.id}">${subService.name}</label>
+                    `;
+                    subServiceDiv.appendChild(checkbox);
+                });
+                document.getElementById("subServices").style.display = "block"; // Show subservice options
             })
             .catch((error) => console.error("Error fetching subservices:", error));
+    }
+
+    // Add event listener to service type select
+    document.getElementById("serviceType").addEventListener("change", fetchSubServices);
+
+    // Handle form submission
+    document.getElementById('serviceForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        // Get user ID from local storage
+        const userId = localStorage.getItem('userId');
+        if (!userId) {
+            alert("User is not logged in.");
+            return;
         }
-      
-        // Add event listener to service type select
-        document.getElementById("serviceType").addEventListener("change", fetchSubServices);
-      
-        // Handle form submission
-        document.getElementById("serviceForm").addEventListener("submit", function (e) {
-          e.preventDefault();
-      
-          const formData = new FormData();
-          formData.append("serviceId", document.getElementById("serviceType").value);
-          formData.append("projectDescription", document.getElementById("projectDescription").value);
-          formData.append("budget", document.getElementById("budget").value);
-          formData.append("duration", document.getElementById("duration").value);
-          formData.append("contactName", document.getElementById("contactName").value);
-          formData.append("contactEmail", document.getElementById("contactEmail").value);
-          formData.append("contactPhone", document.getElementById("contactPhone").value);
-      
-          // Add selected subservices
-          const subServiceInputs = document.querySelectorAll("#subServiceOptions input:checked");
-          subServiceInputs.forEach((input) => {
-            formData.append("subServices", input.value);
-          });
-      
-          // Handle file uploads
-          const files = document.getElementById("files").files;
-          for (let i = 0; i < files.length; i++) {
-            formData.append("files", files[i]);
-          }
-      
-          // Send the data to the backend
-          fetch("http://localhost:5036/api/SubService/subServices/CreatesubService", {
-            method: "POST",
-            body: formData,
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              alert("Request submitted successfully");
-              console.log(data);
-            })
-            .catch((error) => console.error("Error submitting form:", error));
+
+        // Create FormData object and add form data
+        const formData = new FormData();
+        formData.append("contactName", document.getElementById('contactName').value);
+        formData.append("contactEmail", document.getElementById('contactEmail').value);
+        formData.append("contactPhone", document.getElementById('contactPhone').value);
+        formData.append("serviceType", document.getElementById('serviceType').value);
+
+        // Collect selected sub-services
+        const selectedSubServices = [];
+        document.querySelectorAll('#subServiceOptions input[type="checkbox"]:checked').forEach((checkbox) => {
+            selectedSubServices.push(checkbox.value);
         });
-      </script>
+
+        // Add the selected sub-services to the FormData
+        formData.append("subServices", JSON.stringify(selectedSubServices)); // Store as JSON string
+
+        formData.append("projectDescription", document.getElementById('projectDescription').value);
+        formData.append("projectDuration", document.getElementById('duration').value);
+        formData.append("expectedBudget", parseFloat(document.getElementById('budget').value));
+        formData.append("meetingPreference", document.getElementById('meetingPreference').value);
+        formData.append("requestStatus", "Pending");
+        formData.append("userId", userId);
+
+        try {
+            // Send the form data to the API endpoint
+            const response = await fetch('http://localhost:5036/api/Request/createServiceRequest', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                alert("Service request submitted successfully.");
+                document.getElementById('serviceForm').reset();
+            } else {
+                alert("Failed to submit service request.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred while submitting the request.");
+        }
+    });
+</script>
+
       
     <!-- back-to-top -->
     <div id="back-to-top">

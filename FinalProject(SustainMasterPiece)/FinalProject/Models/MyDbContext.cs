@@ -23,13 +23,13 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Order> Orders { get; set; }
 
-    public virtual DbSet<Payment> Payments { get; set; }
-
     public virtual DbSet<Service> Services { get; set; }
+
+    public virtual DbSet<ServiceRequest> ServiceRequests { get; set; }
 
     public virtual DbSet<SubService> SubServices { get; set; }
 
-    public virtual DbSet<Testmonial> Testmonials { get; set; }
+    public virtual DbSet<Testimonial> Testimonials { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
@@ -66,20 +66,13 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.CreatedAt).HasColumnType("datetime");
             entity.Property(e => e.Email)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Message)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Name)
                 .HasMaxLength(255)
                 .IsUnicode(false);
-            entity.Property(e => e.PhoneNumber).HasColumnName("phoneNumber");
-            entity.Property(e => e.UserId).HasColumnName("UserID");
-
-            entity.HasOne(d => d.User).WithMany(p => p.ContactUs)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__ContactUS__UserI__4BAC3F29");
+            entity.Property(e => e.Name).HasMaxLength(100);
+            entity.Property(e => e.PhoneNumber)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .HasColumnName("phoneNumber");
         });
 
         modelBuilder.Entity<FormCheckboxChoice>(entity =>
@@ -113,34 +106,6 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK__Orders__UserID__5070F446");
         });
 
-        modelBuilder.Entity<Payment>(entity =>
-        {
-            entity.HasKey(e => e.PaymentId).HasName("PK__Payments__9B556A585BEBBCA9");
-
-            entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
-            entity.Property(e => e.OrderId).HasColumnName("OrderID");
-            entity.Property(e => e.PaymentAmount).HasColumnType("decimal(10, 2)");
-            entity.Property(e => e.PaymentDate)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
-            entity.Property(e => e.PaymentStatus)
-                .HasMaxLength(20)
-                .IsUnicode(false);
-            entity.Property(e => e.TransactionId)
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("TransactionID");
-            entity.Property(e => e.UserId).HasColumnName("UserID");
-
-            entity.HasOne(d => d.Order).WithMany(p => p.Payments)
-                .HasForeignKey(d => d.OrderId)
-                .HasConstraintName("FK_Payments_OrderID");
-
-            entity.HasOne(d => d.User).WithMany(p => p.Payments)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK_Payments_UserID");
-        });
-
         modelBuilder.Entity<Service>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Service__3214EC07D8F169BE");
@@ -151,6 +116,41 @@ public partial class MyDbContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
             entity.Property(e => e.Name).HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<ServiceRequest>(entity =>
+        {
+            entity.HasKey(e => e.RequestId).HasName("PK__ServiceR__33A8519AD6E17458");
+
+            entity.Property(e => e.RequestId).HasColumnName("RequestID");
+            entity.Property(e => e.ContactEmail)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.ContactName)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.ContactPhone)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.ExpectedBudget).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.MeetingPreference)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.ProjectDescription).HasColumnType("text");
+            entity.Property(e => e.ProjectDuration)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.RequestDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.RequestStatus)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasDefaultValue("Pending");
+            entity.Property(e => e.ServiceType)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.SubServices).HasColumnType("text");
         });
 
         modelBuilder.Entity<SubService>(entity =>
@@ -170,22 +170,25 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK__SubServic__Servi__3D5E1FD2");
         });
 
-        modelBuilder.Entity<Testmonial>(entity =>
+        modelBuilder.Entity<Testimonial>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Testmoni__3214EC27D5B7212A");
+            entity.HasKey(e => e.TestimonialId).HasName("PK__Testimon__D2FDAA2304643FDA");
 
-            entity.ToTable("Testmonial");
+            entity.ToTable("Testimonial");
 
-            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.TestimonialId).HasColumnName("Testimonial_id");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
-            entity.Property(e => e.Status).HasDefaultValue("pending");
+            entity.Property(e => e.IsAccept)
+                .HasDefaultValue(false)
+                .HasColumnName("is_accept");
+            entity.Property(e => e.TestimonialMessege).HasColumnName("Testimonial_messege");
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Testmonials)
+            entity.HasOne(d => d.User).WithMany(p => p.Testimonials)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Testmonia__UserI__440B1D61");
+                .HasConstraintName("FK__Testimoni__UserI__05D8E0BE");
         });
 
         modelBuilder.Entity<User>(entity =>

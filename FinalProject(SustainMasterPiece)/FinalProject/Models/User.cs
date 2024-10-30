@@ -23,11 +23,7 @@ public partial class User
 
     public byte[]? PasswordSalt { get; set; }
 
-    public virtual ICollection<ContactU> ContactUs { get; set; } = new List<ContactU>();
-
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
-    public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
-
-    public virtual ICollection<Testmonial> Testmonials { get; set; } = new List<Testmonial>();
+    public virtual ICollection<Testimonial> Testimonials { get; set; } = new List<Testimonial>();
 }
